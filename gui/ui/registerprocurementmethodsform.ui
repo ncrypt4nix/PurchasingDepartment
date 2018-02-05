@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RegisterProcurementMethodsForm</class>
+ <widget class="QWidget" name="RegisterProcurementMethodsForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>999</width>
+    <height>291</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Конкурентный Способ Закупки</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../resources/main.qrc">
+    <normaloff>:/images/logo.png</normaloff>:/images/logo.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="4" column="5" colspan="2">
+    <widget class="QDateEdit" name="registrationDateEdit">
+     <property name="displayFormat">
+      <string>dd.MM.yyyy</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="smpLabel">
+     <property name="text">
+      <string>СМП</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QLabel" name="startDateDeadlineLabel">
+     <property name="text">
+      <string>Дата начала срока подачи заявок</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="3" colspan="2">
+    <widget class="QPushButton" name="noticeExportButton">
+     <property name="text">
+      <string>Экспорт извещения</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="2">
+    <widget class="QLabel" name="registrationDateLabel">
+     <property name="text">
+      <string>Дата регистрации</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QComboBox" name="smpBox">
+     <item>
+      <property name="text">
+       <string>Не СМП</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>СМП</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="9" column="0" colspan="7">
+    <widget class="gui::ContractInformationWidget" name="ContractInformationWidget" native="true"/>
+   </item>
+   <item row="5" column="5">
+    <widget class="QComboBox" name="procurementMethodBox"/>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="numberNoticeLabel">
+     <property name="text">
+      <string>Номер извещения</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="5" colspan="2">
+    <widget class="QDateEdit" name="startDateDeadlineEdit">
+     <property name="displayFormat">
+      <string>dd.MM.yyyy</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="2">
+    <widget class="QPushButton" name="okButton">
+     <property name="text">
+      <string>Ок</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="5" colspan="2">
+    <widget class="QDateEdit" name="openingEnvelopesDateEdit">
+     <property name="displayFormat">
+      <string>dd.MM.yyyy</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="3" colspan="2">
+    <widget class="QPushButton" name="applyButton">
+     <property name="text">
+      <string>Применить</string>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="5">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>0</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="8" column="0" colspan="6">
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QLineEdit" name="procurementObjectEdit"/>
+   </item>
+   <item row="3" column="2">
+    <widget class="QLabel" name="summarizingDateLabel">
+     <property name="text">
+      <string>Дата протокола расмотрения подведения итогов</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="5" colspan="2">
+    <widget class="QPushButton" name="closeButton">
+     <property name="text">
+      <string>Закрыть</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="5" colspan="2">
+    <widget class="QDateEdit" name="endDateDeadlineEdit">
+     <property name="displayFormat">
+      <string>dd.MM.yyyy</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="1">
+    <widget class="QPushButton" name="hideContractButton">
+     <property name="text">
+      <string>Скрыть/Показать договор</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QLabel" name="openingEnvelopesDateLabel">
+     <property name="text">
+      <string>Дата протокола вскрытия конвертов</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="5" colspan="2">
+    <widget class="QDateEdit" name="summarizingDateEdit">
+     <property name="displayFormat">
+      <string>dd.MM.yyyy</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLineEdit" name="numberNoticeEdit"/>
+   </item>
+   <item row="5" column="2">
+    <widget class="QLabel" name="procurementMethodLabel">
+     <property name="text">
+      <string>Способ закупки</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QLabel" name="endDateDeadlineLabel">
+     <property name="text">
+      <string>Дата окончания срока подачи заявок</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="2">
+    <widget class="QPushButton" name="contractExportButton">
+     <property name="text">
+      <string>Экспорт договора</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="procedureCompleteLabel">
+     <property name="text">
+      <string>Состояние</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QComboBox" name="procedureCompleteBox">
+     <item>
+      <property name="text">
+       <string>Несостоялась</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Состоялась</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="startingPriceLabel">
+     <property name="text">
+      <string>Начальная цена договора</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="procurementObjectLabel">
+     <property name="text">
+      <string>Предмет закупки</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="noticeDateLabel">
+     <property name="text">
+      <string>Дата извещения</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="6">
+    <widget class="QToolButton" name="procurementMethodHandBookButton">
+     <property name="text">
+      <string>-&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QDoubleSpinBox" name="startingPriceSpinBox">
+     <property name="maximum">
+      <double>999999999.990000009536743</double>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QDateEdit" name="noticeDateEdit">
+     <property name="displayFormat">
+      <string>dd.MM.yyyy</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="5" colspan="2">
+    <widget class="QPushButton" name="exportButton">
+     <property name="text">
+      <string>Экспорт</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="0">
+    <widget class="QPushButton" name="addContractButton">
+     <property name="text">
+      <string>Добавить договор</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="2">
+    <widget class="QLabel" name="completenessLabel">
+     <property name="text">
+      <string>Завершенность</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="5" colspan="2">
+    <widget class="QComboBox" name="completenessBox">
+     <item>
+      <property name="text">
+       <string>Действующий</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Завершенный</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>gui::ContractInformationWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">gui/widgets/contractinformationwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>numberNoticeEdit</tabstop>
+  <tabstop>noticeDateEdit</tabstop>
+  <tabstop>procurementObjectEdit</tabstop>
+  <tabstop>startingPriceSpinBox</tabstop>
+  <tabstop>procedureCompleteBox</tabstop>
+  <tabstop>startDateDeadlineEdit</tabstop>
+  <tabstop>endDateDeadlineEdit</tabstop>
+  <tabstop>openingEnvelopesDateEdit</tabstop>
+  <tabstop>summarizingDateEdit</tabstop>
+  <tabstop>addContractButton</tabstop>
+  <tabstop>hideContractButton</tabstop>
+  <tabstop>okButton</tabstop>
+  <tabstop>applyButton</tabstop>
+  <tabstop>closeButton</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../../resources/main.qrc"/>
+ </resources>
+ <connections/>
+</ui>

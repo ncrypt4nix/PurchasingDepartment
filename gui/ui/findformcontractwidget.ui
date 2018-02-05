@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FindFormContractWidget</class>
+ <widget class="QWidget" name="FindFormContractWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>689</width>
+    <height>232</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Поиск Договоров</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../resources/main.qrc">
+    <normaloff>:/images/logo.png</normaloff>:/images/logo.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="4">
+    <widget class="QLabel" name="subdivisionLabel">
+     <property name="text">
+      <string>Подразделение-заказчик</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="3">
+    <widget class="QDateEdit" name="endDateToEdit">
+     <property name="displayFormat">
+      <string>dd.MM.yyyy</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="QDateEdit" name="endDateFromEdit">
+     <property name="displayFormat">
+      <string>dd.MM.yyyy</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="5">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>0</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="5">
+    <widget class="QComboBox" name="responsibleBox"/>
+   </item>
+   <item row="2" column="4">
+    <widget class="QLabel" name="responsibleLabel">
+     <property name="text">
+      <string>Ответственое лицо</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QDateEdit" name="startDateFromEdit">
+     <property name="displayFormat">
+      <string>dd.MM.yyyy</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="contractNumberLabel">
+     <property name="text">
+      <string>№ договора</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QDoubleSpinBox" name="contractsSumFromSpinBox">
+     <property name="maximum">
+      <double>9999999.990000000223517</double>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="4">
+    <widget class="QLabel" name="sourceFinancingLabel">
+     <property name="text">
+      <string>Источник финансирования</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="5">
+    <widget class="QComboBox" name="providerBox"/>
+   </item>
+   <item row="1" column="3">
+    <widget class="QDoubleSpinBox" name="contractsSumToSpinBox">
+     <property name="maximum">
+      <double>9999999.990000000223517</double>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="5">
+    <widget class="QComboBox" name="sourceFinancingBox"/>
+   </item>
+   <item row="6" column="0">
+    <widget class="QLabel" name="commentLabel">
+     <property name="text">
+      <string>Комментарий</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="contractsSumLabel">
+     <property name="text">
+      <string>Сумма договора</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="4">
+    <widget class="QLabel" name="providerLabel">
+     <property name="text">
+      <string>Поставщик товаров/услуг</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2" colspan="2">
+    <widget class="QLineEdit" name="contractNumberEdit"/>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="endDateLabel">
+     <property name="text">
+      <string>Дата окончания</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="5">
+    <widget class="QComboBox" name="subdivisionBox"/>
+   </item>
+   <item row="6" column="2" colspan="4">
+    <widget class="QLineEdit" name="commentEdit"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="startDateLabel">
+     <property name="text">
+      <string>Дата начала</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3">
+    <widget class="QDateEdit" name="startDateToEdit">
+     <property name="displayFormat">
+      <string>dd.MM.yyyy</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="conclusionDateLabel">
+     <property name="text">
+      <string>Дата заключения договора</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="registrationDateLabel">
+     <property name="text">
+      <string>Дата регистрации</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="2">
+    <widget class="QDateEdit" name="conclusionDateFromEdit">
+     <property name="displayFormat">
+      <string>dd.MM.yyyy</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="3">
+    <widget class="QDateEdit" name="conclusionDateToEdit">
+     <property name="displayFormat">
+      <string>dd.MM.yyyy</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="2">
+    <widget class="QDateEdit" name="registrationDateFromEdit">
+     <property name="displayFormat">
+      <string>dd.MM.yyyy</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="3">
+    <widget class="QDateEdit" name="registrationDateToEdit">
+     <property name="displayFormat">
+      <string>dd.MM.yyyy</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="4">
+    <widget class="QLabel" name="completenessLabel">
+     <property name="text">
+      <string>Завершенность</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="5">
+    <widget class="QComboBox" name="completenessBox">
+     <item>
+      <property name="text">
+       <string>Действующий</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Завершенный</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>contractNumberEdit</tabstop>
+  <tabstop>contractsSumFromSpinBox</tabstop>
+  <tabstop>contractsSumToSpinBox</tabstop>
+  <tabstop>startDateFromEdit</tabstop>
+  <tabstop>startDateToEdit</tabstop>
+  <tabstop>endDateFromEdit</tabstop>
+  <tabstop>endDateToEdit</tabstop>
+  <tabstop>commentEdit</tabstop>
+  <tabstop>providerBox</tabstop>
+  <tabstop>subdivisionBox</tabstop>
+  <tabstop>responsibleBox</tabstop>
+  <tabstop>sourceFinancingBox</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../../resources/main.qrc"/>
+ </resources>
+ <connections/>
+</ui>

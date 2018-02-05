@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RegisterCheckForm</class>
+ <widget class="QWidget" name="RegisterCheckForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>576</width>
+    <height>279</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Счет</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../resources/main.qrc">
+    <normaloff>:/images/logo.png</normaloff>:/images/logo.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="4">
+    <widget class="QComboBox" name="paymentDocumentBox"/>
+   </item>
+   <item row="0" column="2">
+    <widget class="QLineEdit" name="numberEdit"/>
+   </item>
+   <item row="2" column="4">
+    <widget class="QComboBox" name="subdivisionsBox"/>
+   </item>
+   <item row="6" column="0">
+    <widget class="QLabel" name="descriptionLabel">
+     <property name="text">
+      <string>Описание</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="QLabel" name="providersLabel">
+     <property name="text">
+      <string>Поставщик товаров/услуг</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="registrationDateLabel">
+     <property name="text">
+      <string>Дата Регистрации</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="checkDateLabel">
+     <property name="text">
+      <string>Дата счета</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="2">
+    <widget class="QSpinBox" name="numberChecksBox">
+     <property name="maximum">
+      <number>99999999</number>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="QLabel" name="paymentDocumentLabel">
+     <property name="text">
+      <string>Платежный документ</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="3">
+    <widget class="QPushButton" name="okButton">
+     <property name="text">
+      <string>Ок</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="2" colspan="3">
+    <widget class="QLineEdit" name="descriptionEdit"/>
+   </item>
+   <item row="3" column="4">
+    <widget class="QComboBox" name="responsiblesBox"/>
+   </item>
+   <item row="2" column="3">
+    <widget class="QLabel" name="subdivisionsLabel">
+     <property name="text">
+      <string>Подразделение-заказчик</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QDateEdit" name="checkDateEdit">
+     <property name="displayFormat">
+      <string>dd.MM.yyyy</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="2">
+    <widget class="QPushButton" name="exportButton">
+     <property name="text">
+      <string>Экспорт</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="sumLabel">
+     <property name="text">
+      <string>Сумма</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="4">
+    <widget class="QComboBox" name="sourcesFinancingBox"/>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="numberLabel">
+     <property name="text">
+      <string>№ счета</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="4">
+    <widget class="QComboBox" name="completenessBox">
+     <item>
+      <property name="text">
+       <string>Действующий</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Завершенный</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="numberChecksLabel">
+     <property name="text">
+      <string>Количество чеков</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="4">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>0</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="4" column="3">
+    <widget class="QLabel" name="sourcesFinancingLabel">
+     <property name="text">
+      <string>Источник финансирования</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="4">
+    <widget class="QPushButton" name="closeButton">
+     <property name="text">
+      <string>Закрыть</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="QDoubleSpinBox" name="sumSpinBox">
+     <property name="maximum">
+      <double>99999999.989999994635582</double>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="3">
+    <widget class="QLabel" name="responsiblesLabel">
+     <property name="text">
+      <string>Ответственное лицо</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="3">
+    <widget class="QLabel" name="completenessLabel">
+     <property name="text">
+      <string>Завершенность</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="4">
+    <widget class="QComboBox" name="providersBox"/>
+   </item>
+   <item row="1" column="2">
+    <widget class="QDateEdit" name="registrationDateEdit">
+     <property name="displayFormat">
+      <string>dd.MM.yyyy</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="5">
+    <widget class="QToolButton" name="paymentDocumentHandBookButton">
+     <property name="text">
+      <string>-&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="5">
+    <widget class="QToolButton" name="providersHandBookButton">
+     <property name="text">
+      <string>-&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="5">
+    <widget class="QToolButton" name="subdivisionsHandBookButton">
+     <property name="text">
+      <string>-&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="5">
+    <widget class="QToolButton" name="responsiblesHandBookButton">
+     <property name="text">
+      <string>-&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="5">
+    <widget class="QToolButton" name="sourcesFinancingHandBookButton">
+     <property name="text">
+      <string>-&gt;</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>numberEdit</tabstop>
+  <tabstop>registrationDateEdit</tabstop>
+  <tabstop>checkDateEdit</tabstop>
+  <tabstop>sumSpinBox</tabstop>
+  <tabstop>numberChecksBox</tabstop>
+  <tabstop>descriptionEdit</tabstop>
+  <tabstop>paymentDocumentBox</tabstop>
+  <tabstop>providersBox</tabstop>
+  <tabstop>subdivisionsBox</tabstop>
+  <tabstop>responsiblesBox</tabstop>
+  <tabstop>sourcesFinancingBox</tabstop>
+  <tabstop>okButton</tabstop>
+  <tabstop>closeButton</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../../resources/main.qrc"/>
+ </resources>
+ <connections/>
+</ui>
